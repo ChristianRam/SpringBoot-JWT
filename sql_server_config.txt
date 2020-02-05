@@ -1,0 +1,13 @@
+spring.datasource.url=jdbc:sqlserver://localhost;databaseName=db_springboot
+spring.datasource.username=sa
+spring.datasource.password=admin
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.database-platform=org.hibernate.dialect.SQLServer2012Dialect
+spring.jpa.hibernate.ddl-auto= create-drop
+logging.level.org.hibernate.SQL=debug
+
+<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<scope>runtime</scope>
+		</dependency>
