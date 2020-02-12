@@ -8,6 +8,12 @@
 		style="display: none;"></div>
 
 	<header th:replace="layout/layout :: header"></header>
+	
+	<div class="container py-4">
+		<select class="form-control" id="select">
+			<option th:each="cliente : ${clientes}" th:text="${cliente.id}" th:value="${cliente.id}"></option>
+		</select>
+	</div>
 
 	<div class="container py-4">
 
